@@ -54,6 +54,7 @@
                     android:layout_marginRight="5dp"
                     android:padding="10dp"
                     android:singleLine="true"
+                    android:digits="0123456789_qwertzuiopasdfghjklyxcvbnm"
                     android:background="@drawable/edittext_style" />
                 <android.widget.Button
                     android:id="@+id/Button_idCertification"
@@ -85,9 +86,9 @@
                 android:layout_height="50dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="15dp"
+                android:background="@drawable/edittext_style"
                 android:padding="10dp"
-                android:singleLine="true"
-                android:background="@drawable/edittext_style" />
+                android:singleLine="true" />
             <TextView
                 android:id="@+id/pwWarning"
                 android:layout_width="310dp"
@@ -115,6 +116,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="3dp"
+                android:inputType="phone"
                 android:text="전화번호"/>
             <EditText
                 android:id="@+id/EditView_phone"
