@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/EditText_id"
+        android:layout_alignLeft="@id/EditText_id"
+        android:text="아이디" />
+
+    <EditText
+        android:id="@+id/EditText_id"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="450dp"
+        android:background="@drawable/edittext_style"
+        android:padding="10dp"
+        android:singleLine="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/editText_pw"
+        android:layout_alignLeft="@id/editText_pw"
+        android:text="비밀번호" />
+    <EditText
+        android:id="@+id/editText_pw"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="370dp"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:background="@drawable/edittext_style" />
+    <TextView
+        android:id="@+id/TextView_loginWarning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/editText_pw"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="340dp"
+        android:text="아이디 또는 비밀번호를 잘못 입력했습니다."
+        android:textColor="#ff0000"
+        android:visibility="invisible" />
+    <Button
+        android:id="@+id/Button_login"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="500dp"
+        android:background="@drawable/button_style"
+        android:text="로그인"
+        android:textColor="@color/white" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/Button_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:id="@+id/TextView_toSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="회원가입"
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   |   "
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/TextView_toGoods"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="바로시작 "
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+</RelativeLayout>

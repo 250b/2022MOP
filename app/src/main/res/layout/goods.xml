@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <!--헤더-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:text="상품 페이지"
+            android:textAlignment="center"
+            android:textColor="#585858"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/ImageView_back"
+            android:layout_width="20dp"
+            android:layout_height="100dp"
+            android:textSize="40dp"
+            android:layout_marginLeft="50dp"
+            android:gravity="center_vertical"
+            android:src="@drawable/vector"
+            app:tint="#424242" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:layout_gravity="right"
+            android:layout_marginRight="50dp"
+            android:orientation="vertical">
+            <ImageButton
+                android:id="@+id/ImageButton_userInfo"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@color/white"
+                android:scaleType="fitCenter"
+                android:src="@drawable/user" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="회원정보"
+                android:textAlignment="textEnd"
+                android:textColor="#585858"
+                android:textSize="10dp"
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
+    </FrameLayout>
+    <!--본문(스크롤뷰 & 리사이클러뷰)-->
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--상품 목록-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/goodsRecycler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="30dp"
+                android:orientation="vertical">
+            </androidx.recyclerview.widget.RecyclerView>
+            <!--상품 추가 입력-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="30dp"
+                android:layout_gravity="center_horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/EditText_imageName"
+                    android:layout_alignLeft="@id/EditText_imageName"
+                    android:text="이미지명" />
+                <EditText
+                    android:id="@+id/EditText_imageName"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/edittext_style"
+                    android:padding="10dp"
+                    android:singleLine="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/EditText_title"
+                    android:layout_alignLeft="@id/EditText_title"
+                    android:text="상품명" />
+                <EditText
+                    android:id="@+id/EditText_title"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:background="@drawable/edittext_style" />
+                <TextView
+                    android:id="@+id/TextView_addWarning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="이미지명과 상품명을 제대로 기입해주세요.
+                    \n(cherry, grape, mango, plum, melon, watermelon)"
+                    android:textColor="#ff0000"
+                    android:visibility="gone" />
+                <Button
+                    android:id="@+id/Button_add"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/button_style"
+                    android:text="상품 추가"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
