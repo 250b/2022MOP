@@ -12,7 +12,7 @@ Pixel 2 API 31 (실행 시, 다른 AVD 사용 가능)
 `targetSdk 32`
 
 ## 설치 방법
-- Github repository 에서 master branch를 clone
+- Github repository 에서 `master` branch를 clone
 - ecampus에 올라가있는 소스 압축 파일을 다운\
 -> Android Studio IDE를 통해 실행
 
