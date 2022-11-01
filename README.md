@@ -65,11 +65,38 @@ Relativelayout으로 구성된 화면입니다.
 ```
 ---
 ### 실행 모습
+<br>
+- 로그인
 <div>
-    <img width="200" alt="" src="">
-    <img width="200" alt="" src="">
-    <img width="200" alt="" src="">
-    <img width="200" alt="" src="">
+    <img width="200" alt="" src="1.png">
+    <img width="200" alt="" src="2.png">
+</div>
+<br>
+- 아이디 중복 & 비밀번호 조건 확인
+<div>
+    <img width="200" alt="" src="5.png">
+    <img width="200" alt="" src="6.png">
+    <img width="200" alt="" src="10.png">
+</div>
+<br>
+- 회원가입 버튼 활성화
+<div>
+    <img width="200" alt="" src="7.png">
+    <img width="200" alt="" src="8.png">
+</div>
+<br>
+- 회원정보
+<div>
+    <img width="200" alt="" src="3.png">
+    <img width="200" alt="" src="4.png">
+    <img width="200" alt="" src="9.png">
+</div>  
+<br>
+- 상품 삭제 & 추가
+<div>
+<img width="200" alt="" src="11.png">
+    <img width="200" alt="" src="12.png">
+    <img width="200" alt="" src="13.png">
 </div>
 
 
