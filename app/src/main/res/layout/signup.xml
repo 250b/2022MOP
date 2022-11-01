@@ -116,7 +116,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="3dp"
-                android:inputType="phone"
                 android:text="전화번호"/>
             <EditText
                 android:id="@+id/EditView_phone"
